@@ -1,110 +1,164 @@
-@font-face {
-    font-family:NunitoSans-ExtraBold;
-    src: url("fonts/NunitoSans-ExtraBold.ttf");
-}
-@font-face {
-    font-family:NunitoSans-Light;
-    src: url("fonts/NunitoSans-Light.ttf");
-}
-@font-face {
-    font-family:NunitoSans-Regular;
-    src: url("fonts/NunitoSans-Regular.ttf");
-}
-@font-face {
-    font-family:NunitoSans-Bold;
-    src: url("fonts/NunitoSans-Bold.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;800&display=swap');
+
+
+:root{
+    --dark-bg: hsl(207, 26%, 17%);
+    --dark-elements: hsl(209, 23%, 22%);
+    --text-dark: hsl(0, 0%, 100%);
+
+
+    --light-bg:hsl(0, 0%, 98%);
+    --light-elements: hsl(0, 0%, 100%);
+    --text-light:hsl(200, 15%, 8%);
+    --txt-input-light: hsl(0, 0%, 52%);
+
+    --ff:'Nunito', sans-serif;
+
+    --bg-color:hsl(207, 26%, 17%);
+    --text-color:hsl(0, 0%, 100%);
+    --elements-color:hsl(209, 23%, 22%);
+    --input-color:hsl(0, 0%, 100%);
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+body{
+    font-family: var(--ff)!important;
+    background: var(--bg-color) !important;
+    color:var(--text-color)!important;
+}
+
+.container-fluid,.container-fluid>.container{
+    background: var(--elements-color);
+}
+.container{
+    background: var(--bg-color);
+}
 .container-fluid{
-    background-color: #fafafa;
-    margin: 0;
-    padding: 0;
+    box-shadow: var(--box-shadow);
 }
-.header {
-    background-color: #ffffff;
-    font-family: NunitoSans-Regular;
-}
+
 .content {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 0px 2.5px #FAF6F6;
+    background: var(--elements-color);
+    line-height: 1.8;
 }
-h6{
-    font-family: NunitoSans-Bold;
-    padding-bottom: 5px;
+
+.container-fluid>.container>h5{
+    font-weight: 800;
+    font-size: 24px;
 }
 
 span{
-    font-family: NunitoSans-Light;
+    font-weight: 400;
 }
 p{
-    font-family: NunitoSans-Bold;
+    font-weight: 600;
 }
-
-.card-text{
-    font-size: 10px;
-}
-.Header{
-    border-color: #F4F0F0;
-    border-bottom-style: inset;
-    height: 3rem;
-}
-.topic{
-    font-family: NunitoSans-ExtraBold;
-}
-
-.region{
-    font-family: NunitoSans-Bold;
-    box-shadow: 0px 0px 0px 2.5px #FAF6F6;
-    border-radius: 4px;
-    background-color: #ffffff;
-    width: 170px;
-
-}
-
-.search{
-    font-family: NunitoSans-Light;
-    box-shadow: 0px 0px 0px 2.5px #FAF6F6;
-    border-radius: 4px;
-}
-.mood{
-    font-family: NunitoSans-Bold;
-}
-.countriesBTN{
-    font-family: NunitoSans-Light;
-    box-shadow: 0px 0.5px 11px 0.5px rgba(0, 0, 0, 0.25);
-}
-
-.back{
-    font-family: NunitoSans-Light;
-    background-color:#ffffff;
-    box-shadow: 0px 0.5px 11px 0.5px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-}
-
-.card-title{
-    font-size: 16px;
-    font-family: NunitoSans-Bold;
-}
-
-.card-img-top {
-    height:9rem;
-    object-fit: cover;
-}
-.card{
-    width: 15rem;
-}
-.flag{
-    height: 19rem;
-    width: 100%;
-}
-.description{
+.container-fluid>.container>a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
     font-size: 14px;
 }
+.card-text{
+    font-size:15px;
+}
+.state{
+    font-size:19px;
+    font-weight: bolder;
+}
+.container>div>.dropdown>button,ul>li{
+    font-weight: 600;
+    background: var(--elements-color);
+    font-size: 10px;
+    width: 11.5rem;
+    color:var(--text-color);
+}
+.container>div>div>input{
+    background: var(--elements-color);
+    color:var(--text-color);
+}
+.container>div>div>.dropdown-content{
+    background: var(--elements-color);
+    color:var(--text-color);
+}
+.container>div>.dropdown{
+    background: var(--elements-color);
+    box-shadow: var(--box-shadow);
+}
+.container>.row>.col>.card{
+    background: var(--elements-color);
+    box-shadow: var(--box-shadow);
+}
 
+body>.container>div>.input-group{
+    font-weight: 200;
+    font-size: 11px;
+    width: 37%;
+    background: var(--elements-color);
+    box-shadow: var(--box-shadow);
+}
+
+.container>.row>div>.row>div>div>div>button{
+    font-weight: 400;
+    font-size: 14px;
+}
+.container>.row>div>.row>div>div>div{
+    width: 5.5rem;
+}
+.container>.row>div>.row>div>.borderCountries{
+    font-weight: 600;
+    font-size: 15px;
+}
+.container>div>.back{
+    font-weight: 200;
+    background: var(--elements-color);
+    width: 7rem;
+    font-size: 14px;
+}
+.container>.row>.col>.card>a>img {
+    height:9.5rem;
+    object-fit: cover;
+    border-color: #F4F0F0;
+    box-shadow: var(--box-shadow);
+}
+.container>.row>.col>.card>.card-body>a{
+    text-decoration: none;
+}
+.container>div>div>img{
+    height:22rem;
+}
+
+
+.container>div>.description{
+    font-size: 15px;
+}
+.smallDisc{
+    line-height: 2.2;
+}
 
 @media only screen and (max-width:390px){
     .flag{
-        height: 13rem;
+        height: 10rem;
         width: 100%;
+    }
+
+    .container>div>.dropdown{
+        width: 10rem;
+    }
+    .container>div>.dropdown>button,ul>li{
+        width: 10rem;
+    }
+
+    body>.container>div>.input-group{
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .container-fluid>.container>h5{
+        font-size: 16px;
+    }
+
+    .container-fluid>.container>button{
+        font-size: 14px;
     }
 }
