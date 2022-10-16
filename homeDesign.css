@@ -30,9 +30,7 @@ body{
 .container-fluid,.container-fluid>.container{
     background: var(--elements-color);
 }
-.container{
-    background: var(--bg-color);
-}
+
 .container-fluid{
     box-shadow: var(--box-shadow);
 }
@@ -62,72 +60,87 @@ p{
 .card-text{
     font-size:15px;
 }
-.state{
-    font-size:19px;
-    font-weight: bolder;
+
+
+.container>div>.dropdown>button{
+    font-weight:600;
+    background: var(--elements-color);
+    font-size: 11px;
+    width: 100%;
+    color:var(--text-color);
+    padding: 15px;
 }
-.container>div>.dropdown>button,ul>li{
+
+.container>div>.dropdown>ul>li{
     font-weight: 600;
     background: var(--elements-color);
-    font-size: 10px;
-    width: 11.5rem;
+    font-size: 11px;
+    width: 11rem;
     color:var(--text-color);
 }
+
+
 .container>div>div>input{
     background: var(--elements-color);
     color:var(--text-color);
 }
-.container>div>div>.dropdown-content{
-    background: var(--elements-color);
-    color:var(--text-color);
-}
+
 .container>div>.dropdown{
+    width: 11rem;
     background: var(--elements-color);
     box-shadow: var(--box-shadow);
 }
-.container>.row>.col>.card{
+
+.container>.row>.col>.row>.col>.card{
     background: var(--elements-color);
     box-shadow: var(--box-shadow);
 }
 
 body>.container>div>.input-group{
     font-weight: 200;
-    font-size: 11px;
+    font-size: 10px;
     width: 37%;
     background: var(--elements-color);
     box-shadow: var(--box-shadow);
+    color:var(--text-color);
 }
 
-.container>.row>div>.row>div>div>div>button{
+body>.container>div>.input-group>.form-control{
+    font-size: 11px;
+}
+
+.container>.row>div>.row>div>button{
     font-weight: 400;
     font-size: 14px;
 }
-.container>.row>div>.row>div>div>div{
+.container>.row>div>.row>.borders{
     width: 5.5rem;
 }
 .container>.row>div>.row>div>.borderCountries{
     font-weight: 600;
     font-size: 15px;
 }
-.container>div>.back{
-    font-weight: 200;
+.container>div>button{
+    font-weight: 400;
     background: var(--elements-color);
+    color:var(--text-color);
     width: 7rem;
     font-size: 14px;
 }
-.container>.row>.col>.card>a>img {
-    height:9.5rem;
+.container>.row>.col>.row>.col>.card>a>img {
+    height:10rem;
     object-fit: cover;
     border-color: #F4F0F0;
     box-shadow: var(--box-shadow);
 }
-.container>.row>.col>.card>.card-body>a{
-    text-decoration: none;
+
+.container>.row>.col>.row>.col>.card{
+    border: none;
 }
+
 .container>div>div>img{
     height:22rem;
 }
-
 
 .container>div>.description{
     font-size: 15px;
@@ -136,22 +149,85 @@ body>.container>div>.input-group{
     line-height: 2.2;
 }
 
+.dropzone{
+    width: 100%;
+    background: var(--elements-color);
+    box-shadow: var(--box-shadow);
+    height: 44rem;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container>div>div>div>h6{
+    font-weight: 800;
+    font-size: 23px;
+    padding: 15px;
+}
+
+.dropzone.over {
+    border-color: #27ae60;
+    border-style: groove ;
+}
+
+.closeBtn{
+    background-color: lightgray;
+}
+
+ul>li>div>img{
+    width: 35px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.container>div>div>div>ul>li{
+    display: flex;
+    justify-content:space-between;
+    border-style: none;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 17px;
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+}
+
+
+.container>div>div>div>ul>li>.closeBtn{
+    background-color:  #e6dfdf!important;
+    height: 4px;
+    width: 4px;
+
+}
+
+
+.container>.row>.col>.row>.col>.card>button>svg{
+    color: lightgray;
+}
+
+.container>.row>.col>.row>.col>.card>button{
+    display: flex;
+    justify-content: right;
+
+}
+
+.container>.row>.col>.row>.col>.card>.card-body>a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 21px;
+    font-weight: 800;
+}
+
+
 @media only screen and (max-width:390px){
     .flag{
         height: 10rem;
         width: 100%;
     }
 
-    .container>div>.dropdown{
-        width: 10rem;
-    }
-    .container>div>.dropdown>button,ul>li{
-        width: 10rem;
-    }
-
     body>.container>div>.input-group{
-        font-size: 10px;
-        width: 90%;
+        width: 100%;
     }
 
     .container-fluid>.container>h5{
